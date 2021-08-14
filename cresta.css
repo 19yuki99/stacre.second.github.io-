@@ -1,0 +1,577 @@
+@charset "utf-8";
+* {box-sizing: border-box;}
+html, body {
+  display: block;
+}
+body, p, button, main, .slider {
+  font-family: "Noto-serif", "Noto-serif JP", sans-serif;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+h1, h2, h3, a, button {
+  text-decoration: none;
+  font-weight:normal;
+}
+.header{
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0 100px;
+  z-index: 1;
+  box-sizing: border-box;
+  height: 76px;
+  transition: .3s;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.header.fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #282f35;
+  transition: .3s;
+}
+header a {
+  color: #fff;
+  font-size: 0.8em;
+}
+.header-title h2 {
+  font-size: 26px;
+  font-weight: lighter;
+  margin: 0;
+}
+.fv{
+  height: 100vh;
+  min-height: 550px;
+  position: relative;
+  width: 100vw;
+}
+.fv img{
+  object-fit: cover;
+  height: 100vh;
+  width: 100vw;
+  min-height: 100%;
+}
+
+.slider img {
+  width: 100vw;
+  object-fit: cover;
+}
+.slick-arrow {
+  display: none !important;
+}
+
+.nav-wrapper {
+  display: block;
+}
+.nav-list {
+  display: flex;
+  font-size: 16px;
+  list-style: none;
+}
+.nav-list li {
+  margin-left: 40px;
+}
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-copy {
+  position: absolute;
+  top: 47%;
+  padding-left: 100px;
+  color: #fff;
+}
+.en-copy {
+  font-size: 4em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.jp-copy {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.sp-br{
+  display: none;
+}
+.container {
+  max-width: 1075px;
+  margin: 0 auto;
+}
+.container h1 {
+  font-size: 60px;
+  margin: 80px 20px;
+}
+.catch {
+  display: flex;
+  align-items: center; /* 垂直中心 */
+  justify-content: right; /* 水平中心 */
+}
+.catch:after {
+  border-top: 4px solid;
+  content: "";
+  width: 3em; /* 線の長さ */
+}
+.catch:after {
+  margin-left: 40px; /* 文字の左隣 */
+  justify-content: right;
+}
+.catch2 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.catch2:after {
+  border-top: 4px solid;
+  display: inline-block;
+  content: "";
+  width: 3em; /* 線の長さ */
+  margin-left: 40px; /* 文字の左隣 */
+  vertical-align: middle;
+}
+.container h2 {
+  text-align: center;
+  width: 600px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.container h3 {
+  font-size: 90px;
+  font-weight: bold;
+  color: rgb(241, 241, 241);
+  text-align: right;
+  padding: 0 20px;
+}
+.concept-detail {
+  display: flex;
+  padding: 30px 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+.concept-detail p {
+  padding-right: 20px;
+  font-weight: bold;
+  line-height: 2em;
+  max-width: 440px;
+}
+.concept-img-wrapper {
+  width: 44%;
+}
+#works {
+  background-image: url(../cresta_second/img/works-bgi@2x.jpg);
+  margin: 0;
+}
+.container2 {
+  text-align: center;
+  max-width: 100%;
+}
+.container2 h1 {
+  font-size: 60px;
+  color: #fff;
+  padding: 80px 20px;
+}
+.text-right {
+  text-align: right;
+}
+.container2 h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.container2 h3 {
+  font-size: 90px;
+  font-weight: bold;
+  color: rgb(241, 241, 241);
+  text-align: left;
+  margin: 0 20px;
+  padding: 90px 0;
+  opacity: 0.1;
+}
+.works-content {
+  display: flex;
+  margin: 0 auto 80px;
+  padding: 0 30px;
+  max-width: 1000px;
+  justify-content: space-between;
+}
+.works-item {
+  width: 32%;
+}
+.works-item img {
+  width: 100%;
+  height: 200px;
+  vertical-align: bottom;
+  object-fit: cover;
+}
+.works-item p {
+  background-color: #fff;
+  text-align: left;
+  line-height: 30px;
+  padding: 20px 25px;
+}
+.content-btn {
+  width: 235px;
+  height: 59px;
+  background-color: rgb(255, 214, 29);
+  box-shadow: 0 0 6px #535252;
+  border-radius: 40px;
+  border: 0;
+  padding: 0;
+}
+.content-btn a {
+  color: black;
+  font-weight: bold;
+}
+.btn {
+  font-weight: bold;
+}
+
+#service h1 {
+  font-size: 60px;
+  margin: 0 auto;
+  padding: 80px 20px 0;
+}
+#service h3 {
+  font-size: 90px;
+  font-weight: bold;
+  color: rgb(241, 241, 241);
+  text-align: right;
+}
+.service-content {
+  display: flex;
+  margin-top: 80px;
+}
+.service_1 {
+  background-image: url(../cresta_second/img/service-img01@2x.jpg);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 40px;
+}
+.service_2 {
+  background-image: url(../cresta_second/img/service-img02@2x.jpg);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 40px;
+}
+.service_3 {
+  background-image: url(../cresta_second/img/sevice-img03@2x.jpg);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 40px;
+}
+.service-item a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  line-height: 320px;
+  font-size: 40px;
+  font-weight: bold;
+  transition: .3s;
+}
+.service-item a:hover{
+  background-color: rgba(40,47,53,.7);
+  transition: .3s;
+}
+#contact {
+  background-image: url(../cresta_second/img/contact-bgi@2x.jpg);
+  color: #fff;
+}
+footer {
+  width: 100%;
+  height: 79px;
+}
+footer p {
+  padding: 25px 0;
+  font-weight: bold;
+}
+.item-center {
+  display: grid;
+  place-items: center;
+}
+#contact-page {
+  background-image: url(../cresta_second/img/contact-page-bgi@2x.jpg);
+  color: #fff;
+  height: 453px;
+  font-size: 60px;
+}
+#form {
+  width: 700px;
+  margin: 60px auto;
+}
+.form-label {
+  float: left;
+  display: block;
+}
+input {
+  width: 700px;
+  height: 30px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  border: 1px solid #000000;
+}
+textarea {
+  width: 700px;
+  height: 171px;
+}
+.form-item {
+  padding-bottom: 20px;
+}
+.checkbox-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.checkbox {
+  border: #282f35 1px solid;
+  height: 10px;
+  width: 10px;
+  margin-right: 10px;
+}
+.checkbox-item {
+  margin-right: 20px;
+}
+.footer-btn {
+  text-align: center;
+  margin: 40px 0;
+}
+@media screen and (max-width: 768px) {
+.container, .container2, .catch {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.header {
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  transition: .3s;
+}
+.header-inner {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.burger-btn {
+  display: block;
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  z-index: 3;
+  background-color: transparent;
+  border: none;
+  top: 20px;
+  right: 4vw;
+}
+.bar {
+  width: 20px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+.bar_top {
+  top: 10px;
+}
+.bar_middle {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.bar_bottom {
+  bottom: 10px;
+}
+.burger-btn.cross .bar_top{
+  transform: translate(-50%,10px) rotate(45deg);
+  transition: transform .3s;
+}
+.burger-btn.cross .bar_middle{
+  opacity: 0;
+  transition: opacity .3s;
+}
+.burger-btn.cross .bar_bottom{
+  transform: translate(-50%,-8px) rotate(-45deg);
+  transition: transform .3s;
+}
+.nav-wrapper{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #1B1310;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  z-index: 2;/*キービジュアルと.btn_triggerとの重なりの前後関係を調整*/
+}
+.nav-list{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.header-title {
+  padding: 0 15px;
+}
+.main-copy {
+  text-align: center;
+  padding: 0;
+  top: 35%;
+  right: 0;
+  left: 0;
+}
+.en-copy {
+  font-size: 9vw;
+}
+.jp-copy {
+  font-size: 7vw;
+  font-weight: bold;
+}
+.sp-br {
+  display: block;
+}
+.container h1 {
+  font-size: 30px;
+  margin: 0;
+  padding: 90px 15px 40px;
+  width: 100%;
+}
+.container h2 {
+  font-size: 20px;
+  width: 100%;
+  padding: 0 15px;
+}
+.concept-detail {
+  display: block;
+  align-items: center;
+  padding: 30px 15px 0;
+}
+.concept-detail p {
+  padding: 0;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.concept-img-wrapper {
+  width: 100%;
+  padding-top: 20px;
+}
+.container h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(241, 241, 241);
+}
+.container2 h1 {
+  font-size: 30px;
+  padding: 90px 15px 40px 0;
+}
+.container2 h2 {
+  font-size: 1.5rem;
+}
+.container2 h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(241, 241, 241);
+  padding: 20px 0 40px 0;
+  margin: 0 0 0 15px;
+}
+.works-content {
+  display: block;
+  margin: 0;
+}
+.works-item {
+  margin: 0 auto 30px;
+  width: 320px;
+  max-width: 100%;
+}
+.content-btn {
+  margin-top: 30px;
+}
+#service h1 {
+  font-size: 30px;
+  margin: 0;
+  padding: 90px 0 0 15px;
+}
+.service-content {
+  display: block;
+  margin-top: 40px;
+}
+.service-item {
+  margin: 30px 0;
+  width: 100%;
+  height: 250px;
+}
+#service h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(241, 241, 241);
+  margin: 0;
+  padding: 0 15px 50px 0;
+}
+.service-item a {
+  display: block;
+  width: 100%;
+  line-height: 250px;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+ul {
+  padding: 0;
+}
+.nav-list li {
+  margin: 0 0 40px 0;
+}
+.nav-item{
+  margin-bottom: 40px;
+  margin-left: 0;
+}
+#contact-page {
+  height: 360px;
+}
+.contact-page h3 {
+  font-size: 30px;
+}
+#form {
+  width: 100%;
+}
+.checkbox-list {
+  display: block;
+}
+.form-label {
+  float: unset;
+  margin-left: 15px;
+}
+.form-item {
+  padding: 0 15px 20px;
+}
+input, textarea {
+  width: 345px;
+  margin: 0 15px 20px;
+}
+}
