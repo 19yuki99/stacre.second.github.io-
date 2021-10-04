@@ -61,7 +61,6 @@ header a {
   width: 100vw;
   min-height: 100%;
 }
-
 .slider img {
   width: 100vw;
   object-fit: cover;
@@ -69,7 +68,6 @@ header a {
 .slick-arrow {
   display: none !important;
 }
-
 .nav-wrapper {
   display: block;
 }
@@ -85,7 +83,6 @@ header a {
   color: #fff;
   text-decoration: none;
 }
-
 .main-copy {
   position: absolute;
   top: 47%;
@@ -169,7 +166,7 @@ header a {
   width: 44%;
 }
 #works {
-  background-image: url(../cresta_second/img/works-bgi@2x.jpg);
+  background-image: url(img/works-bgi@2x.jpg);
   margin: 0;
 }
 .container2 {
@@ -253,21 +250,21 @@ header a {
   margin-top: 80px;
 }
 .service_1 {
-  background-image: url(../cresta_second/img/service-img01@2x.jpg);
+  background-image: url(img/service-img01@2x.jpg);
   width: 100%;
   height: 100%;
   color: #fff;
   font-size: 40px;
 }
 .service_2 {
-  background-image: url(../cresta_second/img/service-img02@2x.jpg);
+  background-image: url(img/service-img02@2x.jpg);
   width: 100%;
   height: 100%;
   color: #fff;
   font-size: 40px;
 }
 .service_3 {
-  background-image: url(../cresta_second/img/sevice-img03@2x.jpg);
+  background-image: url(img/sevice-img03@2x.jpg);
   width: 100%;
   height: 100%;
   color: #fff;
@@ -289,7 +286,7 @@ header a {
   transition: .3s;
 }
 #contact {
-  background-image: url(../cresta_second/img/contact-bgi@2x.jpg);
+  background-image: url(img/contact-bgi@2x.jpg);
   color: #fff;
 }
 footer {
@@ -305,7 +302,7 @@ footer p {
   place-items: center;
 }
 #contact-page {
-  background-image: url(../cresta_second/img/contact-page-bgi@2x.jpg);
+  background-image: url(img/contact-page-bgi@2x.jpg);
   color: #fff;
   height: 453px;
   font-size: 60px;
