@@ -167,6 +167,7 @@ header a {
 }
 #works {
   background-image: url(img/works-bgi@2x.jpg);
+  background-size: cover;
   margin: 0;
 }
 .container2 {
@@ -252,6 +253,7 @@ header a {
 }
 .service_1 {
   background-image: url(img/service-img01@2x.jpg);
+  background-size: cover;
   width: 100%;
   height: 100%;
   color: #fff;
@@ -259,6 +261,7 @@ header a {
 }
 .service_2 {
   background-image: url(img/service-img02@2x.jpg);
+  background-size: cover;
   width: 100%;
   height: 100%;
   color: #fff;
@@ -266,6 +269,7 @@ header a {
 }
 .service_3 {
   background-image: url(img/sevice-img03@2x.jpg);
+  background-size: cover;
   width: 100%;
   height: 100%;
   color: #fff;
@@ -288,6 +292,7 @@ header a {
 }
 #contact {
   background-image: url(img/contact-bgi@2x.jpg);
+  background-size: cover;
   color: #fff;
 }
 footer {
