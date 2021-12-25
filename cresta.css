@@ -578,10 +578,10 @@ input, textarea {
 }
 }
 @media screen and (min-width: 1200px) {
-  .header-inner h2, .nav-list a {
+  header a, .nav-list a {
   font-size: 24px;
   }
   .main-copy {
-  padding-left: 20%;
+  padding-left: 15%;
   }
 }
